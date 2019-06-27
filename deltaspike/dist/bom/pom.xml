@@ -28,10 +28,17 @@
 
     <groupId>org.apache.deltaspike.distribution</groupId>
     <artifactId>distributions-bom</artifactId>
-    <version>1.8.3-SNAPSHOT</version>
+    <version>1.8.3</version>
     <packaging>pom</packaging>
 
     <name>Apache DeltaSpike Distribution Bill of Materials</name>
+
+    <distributionManagement>
+        <repository>
+            <id>central</id>
+            <url>https://repo.pkb.io/artifactory/libs-release-local</url>
+        </repository>
+    </distributionManagement>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -238,4 +245,8 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+  <scm>
+    <tag>deltaspike-1.8.3</tag>
+  </scm>
 </project>

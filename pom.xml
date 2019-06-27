@@ -37,7 +37,7 @@
     -->
     <groupId>org.apache.deltaspike</groupId>
     <artifactId>deltaspike</artifactId>
-    <version>1.8.3-SNAPSHOT</version>
+    <version>1.8.3</version>
     <packaging>pom</packaging>
 
     <name>Apache DeltaSpike</name>
@@ -45,6 +45,13 @@
         Apache DeltaSpike CDI Extensions.
     </description>
     <url>http://deltaspike.apache.org</url>
+
+    <distributionManagement>
+        <repository>
+            <id>central</id>
+            <url>https://repo.pkb.io/artifactory/libs-release-local</url>
+        </repository>
+    </distributionManagement>
 
     <properties>
         <asciidoctor.version>1.5.2</asciidoctor.version>
@@ -57,7 +64,7 @@
         <connection>scm:git:https://git-wip-us.apache.org/repos/asf/deltaspike.git</connection>
         <developerConnection>scm:git:https://git-wip-us.apache.org/repos/asf/deltaspike.git</developerConnection>
         <url>https://git-wip-us.apache.org/repos/asf/deltaspike.git</url>
-        <tag>HEAD</tag>
+        <tag>deltaspike-1.8.3</tag>
     </scm>
 
     <modules>
